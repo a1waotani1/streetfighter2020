@@ -1,0 +1,280 @@
+@import url(https://fonts.googleapis.com/css2?family=Kosugi&display=swap);
+.key { display: inline-block; color: #aaa; font: normal 9pt arial; cursor: pointer; line-height: 19px; text-decoration: none; text-align: center; vertical-align: top; width: 30px; height: 20px; margin: 0 5px 0; background: #eff0f2; border-top: 1px solid #f5f5f5; text-shadow: 0px 1px 0px #f5f5f5; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333333; -moz-box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333333; box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333333; }
+.key:active { color: #888; background: #ebeced; top: 3px; position: relative; margin: 0px 5px 0px; border-top: 1px solid #eee; -webkit-box-shadow: inset 0 0 25px #dddddd, 0 0 3px #333333; -moz-box-shadow: inset 0 0 25px #dddddd, 0 0 3px #333333; box-shadow: inset 0 0 25px #dddddd, 0 0 3px #333333; }
+
+body{
+    text-align:left;
+    font-size: 32px;
+    background-color: black;
+    margin: 0; 
+}
+header{
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+}
+ul{
+    padding: 0;
+    width:400px;
+    height: 50px;
+    margin: 0 auto;
+}
+li{
+    list-style-type:none;
+    color: yellow;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    right: 30%;
+}
+h1 {
+  background: linear-gradient(#FF4F02, #FFCC00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 100px;
+  letter-spacing: 10px;
+}
+
+#health-bars {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.health-label {
+  line-height: 1.5em;
+}
+.health {
+  background: #ccc;
+  height: 20px;
+  position: relative;
+  width: 320px;
+  top: 200px;
+}
+
+.fill {
+  background: #0a0;
+  display: block;
+  height: 20px;
+  position: absolute;
+  transition: width 0.5s;
+}
+
+#p1healthnum {
+  left: 140px;
+  width: 0%;
+  color: thistle;
+  position: relative;
+  top: 200px;
+  font-family:'Press Start 2P', cursive; 
+}
+
+#p2healthnum {
+  right: 140px;
+  width: 0%;
+  color: thistle;
+  position: relative;
+  top: 200px;
+  font-family: 'Press Start 2P', cursive; 
+}
+
+strong {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    top: 220px;
+    position: relative;
+}
+.stage { 
+    width:1200px; 
+    height:800px;  
+    overflow:hidden; 
+    position:relative; 
+    z-index:0;
+    background:url(https://raw.githubusercontent.com/jkneb/street-fighter-css/master/images/bg2.jpg) no-repeat 0px -100px;
+    background-size:contain;
+    background-position: center;
+    margin: 0 auto;
+    padding: 0px;
+}
+.commands { 
+    margin-top: 20px; 
+    padding: 20px; 
+    width: 800px; 
+    margin: 0 auto; 
+    background-color: black; 
+    font-family: 'Kosugi', sans-serif;
+    font-size: 40px;
+    color: white;
+    -webkit-border-radius: 10px 0 10px 10px; 
+    -moz-border-radius: 0 0 10px 10px; -ms-border-radius: 0 0 10px 10px; 
+    border-radius: 0 0 10px 10px; 
+    -webkit-box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4); 
+    -moz-box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4); 
+    box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4); }
+
+.flip { -webkit-transform: scaleX(-1); -moz-transform: scaleX(-1); -ms-transform: scaleX(-1); transform: scaleX(-1); }
+
+.ken {
+position: absolute;
+  bottom: 35px;
+  margin-left: 550px;
+  top: 800px;
+  width: 175px;
+  height: 200px;
+    background-image: url(https://raw.githubusercontent.com/jkneb/street-fighter-css/master/images/ken-big.png);
+}
+.stance {
+  -webkit-animation: stance steps(4) 0.5s infinite;
+  -moz-animation: stance steps(4) 0.5s infinite;
+  -ms-animation: stance steps(4) 0.5s infinite;
+  animation: stance steps(4) 0.5s infinite; }
+
+@-webkit-keyframes stance {
+  from {
+    background-position: 0px -200px; }
+  to {
+    background-position: -700px -200px; } }
+
+@-moz-keyframes stance {
+  from {
+    background-position: 0px -200px; }
+  to {
+    background-position: -700px -200px; } }
+
+@-ms-keyframes stance {
+  from {
+    background-position: 0px -200px; }
+  to {
+    background-position: -700px -200px; } }
+
+@keyframes stance {
+  from {
+    background-position: 0px -200px; }
+  to {
+    background-position: -700px -200px; } }
+
+.punch { -webkit-animation: punch steps(3) 0.15s infinite; -moz-animation: punch steps(3) 0.15s infinite; -ms-animation: punch steps(3) 0.15s infinite; animation: punch steps(3) 0.15s infinite; }
+
+@-webkit-keyframes punch {
+  from {
+    background-position: 0px -400px; }
+  to {
+    background-position: -525px -400px; } }
+
+@-moz-keyframes punch {
+  from {
+    background-position: 0px -400px; }
+  to {
+    background-position: -525px -400px; } }
+
+@-ms-keyframes punch {
+  from {
+    background-position: 0px -400px; }
+  to {
+    background-position: -525px -400px; } }
+
+@keyframes punch {
+  from {
+    background-position: 0px -400px; }
+  to {
+    background-position: -525px -400px; } }
+.kick { -webkit-animation: kick steps(5) 0.5s infinite; -moz-animation: kick steps(5) 0.5s infinite; -ms-animation: kick steps(5) 0.5s infinite; animation: kick steps(5) 0.5s infinite; }
+@-webkit-keyframes kick {
+  from {
+    background-position: 0px -1200px; }
+  to {
+    background-position: -875px -1200px; } }
+
+@-moz-keyframes kick {
+  from {
+    background-position: 0px -1200px; }
+  to {
+    background-position: -875px -1200px; } }
+
+@-ms-keyframes kick {
+  from {
+    background-position: 0px -1200px; }
+  to {
+    background-position: -875px -1200px; } }
+
+@keyframes kick {
+  from {
+    background-position: 0px -1200px; }
+  to {
+    background-position: -875px -1200px; } }
+
+.reversekick { -webkit-animation: reversekick steps(5) 0.5s infinite; -moz-animation: reversekick steps(5) 0.5s infinite; -ms-animation: reversekick steps(5) 0.5s infinite; animation: reversekick steps(5) 0.5s infinite; }
+@-webkit-keyframes reversekick {
+  from {
+    background-position: 0px -1400px; }
+  to {
+    background-position: -875px -1400px; } }
+
+@-moz-keyframes reversekick {
+  from {
+    background-position: 0px -1400px; }
+  to {
+    background-position: -875px -1400px; } }
+
+@-ms-keyframes reversekick {
+  from {
+    background-position: 0px -1400px; }
+  to {
+    background-position: -875px -1400px; } }
+
+@keyframes reversekick {
+  from {
+    background-position: 0px -1400px; }
+  to {
+    background-position: -875px -1400px; } }
+  
+.guile { 
+    position: absolute; 
+    bottom: 15px; 
+    margin-left: 650px; 
+    top: 820px;
+    width: 162px; 
+    height: 200px; 
+    background-image: url('img/guile.png');}
+
+.stance2 { -webkit-animation: stance2 steps(3) 0.5s infinite; -moz-animation: stance2 steps(3) 0.5s infinite; -ms-animation: stance2 steps(3) 0.5s infinite; animation: stance2 steps(3) 0.5s infinite; }
+@-webkit-keyframes stance2 { from { background-position: 0px 0px; }
+  to { background-position: -400px 0px; } }
+
+@-moz-keyframes stance2 { from { background-position: 0px 0px; }
+  to { background-position: -400px 0px; } }
+
+@-ms-keyframes stance2 { from { background-position: 0px 0px; }
+  to { background-position: -400px 0px; } }
+
+@keyframes stance2 { from { background-position: 0px 0px; }
+  to { background-position: -400px 0px; } }
+
+.hit1 { background-image: url('/Users/aiwaotani/Desktop/01_05_otaniaiwa/img/guile-hit.png'); -webkit-animation: hit1 steps(1) 0.5s infinite; -moz-animation: hit1 steps(1) 0.5s infinite; -ms-animation: hit1 steps(1) 0.5s infinite; animation: hit1 steps(1) 0.5s infinite; }
+
+@-webkit-keyframes hit1 { from { background-position: 0px 0px; }
+  to { background-position: -200px 0px; } }
+
+@-moz-keyframes hit1 { from { background-position: 0px 0px; }
+  to { background-position: -200px 0px; } }
+
+@-ms-keyframes hit1 { from { background-position: 0px 0px; }
+  to { background-position: -200px 0px; } }
+
+@keyframes hit1 { from { background-position: 0px 0px; }
+  to { background-position: -200px 0px; } }
+.hit2 { background-image: url('/Users/aiwaotani/Desktop/01_05_otaniaiwa/img/guile-hit.png'); -webkit-animation: hit2 steps(3) 0.5s infinite; -moz-animation: hit2 steps(3) 0.5s infinite; -ms-animation: hit2 steps(3) 0.5s infinite; animation: hit2 steps(3) 0.5s infinite; }
+
+@-webkit-keyframes hit2 { from { background-position: 0px -200px; }
+  to { background-position: -400px -200px; } }
+
+@-moz-keyframes hit2 { from { background-position: 0px -90px; }
+  to { background-position: -400px -300px; } }
+
+@-ms-keyframes hit2 { from { background-position: 0px -90px; }
+  to { background-position: -400px -300px; } }
+
+@keyframes hit2 { from { background-position: 0px -90px; }
+  to { background-position: -400px -300px; } }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/sample.css">
+  <link href="https://fonts.googleapis.com/css?family=Ceviche+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>RPS FIGHTER</title>
+</head>
+
+<body>
+  <header>
+    <h1 style="font-family: 'Ceviche One' , cursive;">RPS FIGHTER</h1>
+  </header>
+
+  <main>
+    <div class="stage">
+      <ul>
+        <li style="font-family: 'Press Start 2P', cursive;" id="fight">PRESS "SPACE"TO START!</li>
+      </ul>
+      <div id="health-bars">
+        <div class="health-label">
+          <strong>KEN</strong><br><span id="p1healthnum">200</span>
+        </div>
+        <div class="health">
+          <span class="fill" id="p1-health"></span>
+        </div>
+        <div class="health">
+          <span class="fill" id="p2-attack"></span>
+        </div>
+        <div class="health-label">
+          <strong>GUILE</strong><br><span id="p2healthnum">200</span>
+        </div>
+      </div>
+    </div>
+    <div class="ken stance"></div>
+    <div class="guile stance2 flip"></div>
+    </div>
+    <table class="commands">
+      <tr>
+        <td>グー(パンチ):<span class="key" id="space">space</span>
+        <td>チョキ(キック): <span class="key" id="a">a</span>
+      <tr>
+        <td>パー(逆キック) <span class="key" id="d">d</span>
+    </table>
+  </main>
+
+  <footer>フッター</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/Users/aiwaotani/Desktop/01_05_otaniaiwa/js/janken.js"></script>
+</body>
+
+</html>
